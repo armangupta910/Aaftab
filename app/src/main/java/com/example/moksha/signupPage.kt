@@ -217,6 +217,8 @@ class signupPage : AppCompatActivity() {
                             .set(userMap)
                             .addOnSuccessListener {
                                 Toast.makeText(this, "User registered successfully", Toast.LENGTH_SHORT).show()
+                                startActivity(Intent(this,getStarted::class.java))
+                                finish()
                             }
                             .addOnFailureListener { e ->
                                 Toast.makeText(this, "Failed to save user data: ${e.message}", Toast.LENGTH_SHORT).show()

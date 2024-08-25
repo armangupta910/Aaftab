@@ -1,9 +1,11 @@
 package com.example.moksha
 
 import android.animation.ValueAnimator
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -14,14 +16,27 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
+import com.google.firebase.auth.FirebaseAuth
 
 class getStarted : AppCompatActivity() {
     private lateinit var viewPager: ViewPager2
     private lateinit var dotIndicator: RecyclerView
     private lateinit var dotIndicatorAdapter: DotIndicatorAdapter
+    private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_get_started)
+
+        auth = FirebaseAuth.getInstance()
+
+
+        val logoutButton: ImageView = findViewById(R.id.logOut)
+        logoutButton.setOnClickListener {
+            auth.signOut()
+            val intent = Intent(this, loginPage::class.java)
+            startActivity(intent)
+            finish() // Finish the main activity
+        }
 
 
         findViewById<ImageView>(R.id.tab1img).setOnClickListener {
@@ -80,9 +95,9 @@ class getStarted : AppCompatActivity() {
         dotIndicator = findViewById(R.id.dotsIndicator)
 
         val carouselItems = listOf(
-            CarouselItem(R.drawable.personimage, "Item 1"),
-            CarouselItem(R.drawable.personimage, "Item 2"),
-            CarouselItem(R.drawable.personimage, "Item 3")
+            CarouselItem(R.drawable.walking, "Item 1"),
+            CarouselItem(R.drawable.meditation, "Item 2"),
+            CarouselItem(R.drawable.stretching, "Item 3")
         )
 
         val adapter = CarouselAdapter(carouselItems)
@@ -102,9 +117,9 @@ class getStarted : AppCompatActivity() {
             }
         })
 
-        val space = 40 // Adjust this value to control the space between items
+        val space = 20 // Adjust this value to control the space between items
         viewPager.addItemDecoration(CarouselItemDecoration(space))
-        viewPager.setPageTransformer(CarouselPageTransformer(0.8f))
+        viewPager.setPageTransformer(CarouselPageTransformer(1f))
     }
 
     private fun animateCardViewWidthToZero(cardView: CardView) {

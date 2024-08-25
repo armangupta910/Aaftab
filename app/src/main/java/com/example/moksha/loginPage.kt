@@ -2,6 +2,7 @@ package com.example.moksha
 
 import android.annotation.SuppressLint
 import android.content.ContentValues
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
@@ -48,6 +49,10 @@ class loginPage : AppCompatActivity() {
         findViewById<ImageView>(R.id.goBackImage).setOnClickListener {
             startActivity(Intent(this,beginOptionPage::class.java))
             finish()
+        }
+
+        findViewById<TextView>(R.id.forgot).setOnClickListener {
+            startActivity(Intent(this,forgotPassword::class.java))
         }
 
         FirebaseApp.initializeApp(this)
@@ -158,17 +163,21 @@ class loginPage : AppCompatActivity() {
                                     val name = document.getString("name")
                                     val gender = document.getString("gender")
                                     Toast.makeText(this, "Welcome back, $name!", Toast.LENGTH_SHORT).show()
+                                    startActivity(Intent(this,getStarted::class.java))
+                                    finish()
                                     // You can navigate to the next screen or perform any desired actions here
                                 } else {
-                                    Toast.makeText(this, "No user data found", Toast.LENGTH_SHORT).show()
+                                    Toast.makeText(this, "Email ID is not regsitered", Toast.LENGTH_SHORT).show()
                                 }
                             }
                             .addOnFailureListener { e ->
-                                Toast.makeText(this, "Failed to retrieve user data: ${e.message}", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(this, "Some unknown error has ocurred ${e.message}", Toast.LENGTH_SHORT).show()
                             }
                     }
                 } else {
-                    Toast.makeText(this, "Sign-in failed: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Wrong Credentials", Toast.LENGTH_SHORT).show()
+                    findViewById<EditText>(R.id.email).setBackgroundResource(R.drawable.wrongpassword)
+                    findViewById<EditText>(R.id.password).setBackgroundResource(R.drawable.wrongpassword)
                 }
             }
     }

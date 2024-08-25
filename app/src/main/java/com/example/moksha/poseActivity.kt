@@ -49,6 +49,8 @@ class poseActivity : AppCompatActivity() {
         } else {
             // Permission has already been granted. Initialize the camera
             initializeCamera()
+
+
         }
     }
 

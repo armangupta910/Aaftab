@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/color3"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".begineerTraining">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <ImageView
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_marginTop="20dp"
+           android:layout_height="match_parent"
+           android:layout_marginLeft="20dp"
+           android:src="@drawable/img_4"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="15"
+        android:layout_height="wrap_content"
+        android:text="BEGINNER TRAINING"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"/>
+
+   </LinearLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/yogaposes"
+        android:padding="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="25dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#CEDDCA">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mountain Pose"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:textSize="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="(Tadasana)"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:textSize="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Improves posture. Strengthens thighs, knees, and ankles. Firms abdomen and buttocks. Relieves sciatica. Reduces flat feet."
+                            android:textStyle="normal"
+                            android:layout_marginTop="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_marginTop="5dp"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:text="start"
+                            android:textSize="10dp"
+                            android:padding="0dp"
+                            android:background="@drawable/roundbuttonbglogin"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:src="@drawable/mountain"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#C4D0CE">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Palm Tree Pose"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:textSize="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="(Urdhva Hastasana)"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:textSize="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Elongates the spine. Brings awareness to your entire body. Improves posture. Firms abdomen and buttocks."
+                            android:textStyle="normal"
+                            android:layout_marginTop="5dp" />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_marginTop="5dp"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:text="start"
+                            android:textSize="10dp"
+                            android:padding="0dp"
+                            android:background="@drawable/roundbuttonbglogin"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:src="@drawable/plam"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#CEDDCA">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Stand Folding Pose"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:textSize="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="(Uttanasan)"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:textSize="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Strengthens the ankles, thighs, calves, and spine. Stretches shoulders and chest. Reduces flat feet. Energizes the entire body."
+                            android:textStyle="normal"
+                            android:layout_marginTop="5dp" />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_marginTop="5dp"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:text="start"
+                            android:textSize="10dp"
+                            android:padding="0dp"
+                            android:background="@drawable/roundbuttonbglogin"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:src="@drawable/standfolding"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="25dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#C4D0CE">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Half Standing  Folding Bend"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:textSize="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="(Ardha Uttasnasan)"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:textSize="15dp"
+                            android:layout_width="match_parent"
+                            android:ellipsize="end"
+                            android:layout_height="wrap_content"
+                            android:maxLines="4"
+                            android:text="Calms the brain, relieves stress, aids liver and kidneys, stretches legs and hips, strengthens thighs, improves digestion, eases menopause, reduces fatigue and anxiety."
+                            android:textStyle="normal"
+                            android:layout_marginTop="5dp" />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_marginTop="5dp"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:text="start"
+                            android:textSize="10dp"
+                            android:padding="0dp"
+                            android:background="@drawable/roundbuttonbglogin"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:src="@drawable/halfstanding"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="25dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#CEDDCA">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="High Lunge"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:textSize="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="(Utthita Ashwa Sanshalanasana)"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:textSize="15dp"
+                            android:maxLines="4"
+                            android:ellipsize="end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Builds flexible strength, promotes torso stability, tones lower body. Stretches chest, lungs, shoulders, arms, neck, belly, groins, and back muscles."
+                            android:textStyle="normal"
+                            android:layout_marginTop="5dp" />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_marginTop="5dp"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:text="start"
+                            android:textSize="10dp"
+                            android:padding="0dp"
+                            android:background="@drawable/roundbuttonbglogin"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:src="@drawable/highlunge"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="25dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#C4D0CE">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Chair Pose"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:textSize="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="(Utkatasana)"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:textSize="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="4"
+                            android:ellipsize="end"
+                            android:text="Strengthens the ankles, thighs, calves, and spine. Stretches shoulders and chest. Stimulates the abdominal organs, diaphragm, and heart. Reduces flat feet. Energizes the entire body."
+                            android:textStyle="normal"
+                            android:layout_marginTop="5dp" />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_marginTop="5dp"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:text="start"
+                            android:textSize="10dp"
+                            android:padding="0dp"
+                            android:background="@drawable/roundbuttonbglogin"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/chair"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="25dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#CEDDCA">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Triangle Pose"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:textSize="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="(Trikonasana)"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:textSize="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="4"
+                            android:ellipsize="end"
+                            android:text="Strengthens and stretches legs, hips, shoulders, chest, and spine. Stimulates abdomen, relieves stress, aids digestion, eases menopause."
+                            android:textStyle="normal"
+                            android:layout_marginTop="5dp" />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_marginTop="5dp"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:text="start"
+                            android:textSize="10dp"
+                            android:padding="0dp"
+                            android:background="@drawable/roundbuttonbglogin"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/triangle"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="25dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#C4D0CE">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_height="wrap_content"
+                            android:text="Extended Side Angle Pose"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:textSize="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="(Utthita Parsvakonasana)"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:textSize="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="4"
+                            android:ellipsize="end"
+                            android:text="Strengthens and stretches the legs, knees, and ankles. Stretches the groin, spine, waist, chest, lungs, and shoulders. Stimulates abdominal organs."
+                            android:textStyle="normal"
+                            android:layout_marginTop="5dp" />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_marginTop="5dp"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:text="start"
+                            android:textSize="10dp"
+                            android:padding="0dp"
+                            android:background="@drawable/roundbuttonbglogin"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/extended"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="25dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#CEDDCA">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Staff Pose"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:textSize="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="(Dandasana)"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:textSize="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Strengthens the back muscles. Stretches the shoulders and chest. Improves posture."
+                            android:textStyle="normal"
+                            android:layout_marginTop="5dp"/>
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_marginTop="5dp"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:text="start"
+                            android:textSize="10dp"
+                            android:padding="0dp"
+                            android:background="@drawable/roundbuttonbglogin"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:src="@drawable/mountain"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+
+
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>

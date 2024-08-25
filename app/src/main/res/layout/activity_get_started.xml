@@ -9,6 +9,7 @@
     android:orientation="vertical"
     tools:context=".getStarted">
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -51,6 +52,7 @@
 
                 </LinearLayout>
                 <ImageView
+                    android:id="@+id/logOut"
                     android:layout_weight="0.3"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -78,7 +80,7 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginTop="20dp"
                     android:id="@+id/textView"
-                    android:lineSpacingExtra="10dp"
+                    android:lineSpacingExtra="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="“The soul always knows what to do to heal itself. The challenge is to silence the mind.”"
@@ -102,11 +104,11 @@
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/viewPager"
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="185dp"
                 android:clipToPadding="false"
                 android:clipChildren="false"
-                android:paddingStart="30dp"
-                android:paddingEnd="30dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
                 android:layout_gravity="center"/>
 
             <androidx.recyclerview.widget.RecyclerView
@@ -128,29 +130,33 @@
                     android:layout_weight="1"
                     android:layout_height="200dp"
                     app:cardCornerRadius="20dp"
-                    app:cardBackgroundColor="@color/color4"
-                    android:layout_marginLeft="10dp"/>
+                    android:layout_marginBottom="5dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_marginLeft="10dp">
+                </androidx.cardview.widget.CardView>
                 <LinearLayout
                     android:layout_marginRight="10dp"
                     android:layout_width="0dp"
-                    android:layout_height="200dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:layout_weight="1">
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="0.8"
                         android:layout_height="0dp"
                         app:cardCornerRadius="20dp"
                         android:layout_marginBottom="5dp"
-                        app:cardBackgroundColor="@color/color4"
-                        android:layout_marginLeft="10dp"/>
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginLeft="10dp">
+                    </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_marginTop="5dp"
                         android:layout_weight="1"
                         android:layout_height="0dp"
                         app:cardCornerRadius="20dp"
-                        app:cardBackgroundColor="@color/color4"
+                        app:cardBackgroundColor="@color/white"
                         android:layout_marginLeft="10dp"/>
 
                 </LinearLayout>
@@ -188,6 +194,7 @@
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="20dp">
                         <LinearLayout
+                            android:padding="5dp"
                             android:paddingBottom="10dp"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -218,12 +225,44 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
-                                android:layout_weight="1"
+                                android:layout_weight="0.5"
                                 android:textAlignment="center"
                                 android:textColor="@color/black"
-                                android:text="Click Here"
+                                android:text="Yoga is the best way to health and fitness. "
                                 android:gravity="bottom"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="11dp"
                                 android:layout_gravity="bottom"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.4"
+                                android:textAlignment="center"
+                                android:textColor="#777777"
+                                android:text="This will provide guidance and support to help you enhance your yoga technique and posture."
+                                android:gravity="bottom"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="8dp"
+                                android:layout_gravity="bottom"/>
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.1"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:text="Let’s Start  "
+                                android:drawableEnd="@drawable/img_2"
+                                android:gravity="bottom"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="8dp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal"/>
 
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -235,6 +274,7 @@
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="20dp">
                         <LinearLayout
+                            android:padding="5dp"
                             android:paddingBottom="10dp"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -265,12 +305,44 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
-                                android:layout_weight="1"
+                                android:layout_weight="0.5"
                                 android:textAlignment="center"
                                 android:textColor="@color/black"
-                                android:text="Click Here"
+                                android:text="Take health into your own hands."
                                 android:gravity="bottom"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="11dp"
                                 android:layout_gravity="bottom"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.4"
+                                android:textAlignment="center"
+                                android:textColor="#777777"
+                                android:text="Stay vibrant and youthful by planning your diet and enjoying nutritious, balanced meals."
+                                android:gravity="bottom"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="8dp"
+                                android:layout_gravity="bottom"/>
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.1"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:text="Let’s Start  "
+                                android:drawableEnd="@drawable/img_2"
+                                android:gravity="bottom"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="8dp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal"/>
 
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -282,6 +354,7 @@
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="20dp">
                         <LinearLayout
+                            android:padding="5dp"
                             android:paddingBottom="10dp"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -312,12 +385,44 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
-                                android:layout_weight="1"
+                                android:layout_weight="0.5"
                                 android:textAlignment="center"
                                 android:textColor="@color/black"
-                                android:text="Click Here"
+                                android:text="Calculate your BMI"
                                 android:gravity="bottom"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="11dp"
                                 android:layout_gravity="bottom"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.4"
+                                android:textAlignment="center"
+                                android:textColor="#777777"
+                                android:text="Discover your BMI with our app Enter your height and weight to get valuable insights into your health."
+                                android:gravity="bottom"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="8dp"
+                                android:layout_gravity="bottom"/>
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.1"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:text="Let’s Start  "
+                                android:drawableEnd="@drawable/img_2"
+                                android:gravity="bottom"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="8dp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal"/>
 
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -420,12 +525,12 @@
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:src="@drawable/home"
+                        android:src="@drawable/tab2black"
                         android:layout_weight="1"/>
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Home"
+                        android:text="Yoga"
                         android:layout_weight="2"
                         android:layout_gravity="center_vertical"
                         android:gravity="center_vertical|center_horizontal"
@@ -465,12 +570,12 @@
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:src="@drawable/home"
+                        android:src="@drawable/tab3black"
                         android:layout_weight="1"/>
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Home"
+                        android:text="Video"
                         android:layout_weight="2"
                         android:layout_gravity="center_vertical"
                         android:gravity="center_vertical|center_horizontal"
@@ -509,14 +614,17 @@
                     android:orientation="horizontal"
                     android:layout_gravity="center">
                     <ImageView
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginLeft="7dp"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:src="@drawable/home"
+                        android:src="@drawable/demo"
                         android:layout_weight="1"/>
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Home"
+                        android:text="Profile"
                         android:layout_weight="2"
                         android:layout_gravity="center_vertical"
                         android:gravity="center_vertical|center_horizontal"

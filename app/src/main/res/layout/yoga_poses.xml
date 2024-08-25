@@ -10,61 +10,68 @@
     tools:context=".yogaPoses">
 
     <Button
-        android:id="@+id/pose1"
+        android:id="@+id/plank"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="Yoga Pose - 1"/>
+        android:text="Yoga Pose - Plank"/>
     <Button
+        android:id="@+id/cobra"
         android:layout_width="match_parent"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="Yoga Pose - 2"/>
+        android:text="Yoga Pose - Cobra"/>
     <Button
+        android:id="@+id/cobbler"
         android:layout_width="match_parent"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="Yoga Pose - 3"/>
+        android:text="Yoga Pose - Cobbler"/>
     <Button
+        android:id="@+id/extended"
         android:layout_width="match_parent"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="Yoga Pose - 4"/>
+        android:text="Yoga Pose - Extended"/>
     <Button
+        android:id="@+id/downward"
         android:layout_width="match_parent"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="Yoga Pose - 5"/>
+        android:text="Yoga Pose - Downward"/>
     <Button
+        android:id="@+id/triangle"
         android:layout_width="match_parent"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="Yoga Pose - 6"/>
+        android:text="Yoga Pose - Triangle"/>
     <Button
+        android:id="@+id/warrior1"
         android:layout_width="match_parent"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="Yoga Pose - 7"/>
+        android:text="Yoga Pose - Warrior (1)"/>
     <Button
+        android:id="@+id/warrior2"
         android:layout_width="match_parent"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
-        android:text="Yoga Pose - 8"/>
+        android:text="Yoga Pose - Warrior (2)"/>
 
 
 </LinearLayout>

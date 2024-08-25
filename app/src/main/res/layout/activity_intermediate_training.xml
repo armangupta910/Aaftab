@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/color3"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".begineerTraining">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/img_4"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="15"
+            android:layout_height="wrap_content"
+            android:text="INTERMEDIATE TRAINING"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/yogaposes"
+        android:padding="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="25dp"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#CEDDCA">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Side Plannk"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:textSize="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="(Vasisthasana)"
+                                android:textStyle="normal"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:textSize="15dp"
+                                android:maxLines="4"
+                                android:ellipsize="end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Calms the brain, relieves stress, depression. Stretches, strengthens, etc. Relieves headaches, insomnia, back pain, fatigue."
+                                android:textStyle="normal"
+                                android:layout_marginTop="5dp" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_marginTop="5dp"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:text="start"
+                                android:textSize="10dp"
+                                android:padding="0dp"
+                                android:background="@drawable/roundbuttonbglogin"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:src="@drawable/sideplank"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#C4D0CE">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Wild Thing"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:textSize="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="(Camatkarasana)"
+                                android:textStyle="normal"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:textSize="15dp"
+                                android:maxLines="4"
+                                android:ellipsize="end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Stretches the chest, shoulders, back, and throat. Strengthens and opens the hips, hip flexors, and thighs."
+                                android:textStyle="normal"
+                                android:layout_marginTop="5dp" />
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_marginTop="5dp"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:text="start"
+                                android:textSize="10dp"
+                                android:padding="0dp"
+                                android:background="@drawable/roundbuttonbglogin"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:src="@drawable/wild"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#CEDDCA">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Half Frog Pose"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:textSize="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="(Ardha Bhakasana)"
+                                android:textStyle="normal"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:textSize="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Stretches the chest, psoas, quadriceps and ankles."
+                                android:textStyle="normal"
+                                android:layout_marginTop="5dp" />
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_marginTop="5dp"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:text="start"
+                                android:textSize="10dp"
+                                android:padding="0dp"
+                                android:background="@drawable/roundbuttonbglogin"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:src="@drawable/halffrog"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="25dp"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#C4D0CE">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Frog Pose"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:textSize="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="(Mandukasana)"
+                                android:textStyle="normal"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:textSize="15dp"
+                                android:layout_width="match_parent"
+                                android:ellipsize="end"
+                                android:layout_height="wrap_content"
+                                android:maxLines="4"
+                                android:text="Stretches the chest, psoas, quadriceps and ankles."
+                                android:textStyle="normal"
+                                android:layout_marginTop="5dp" />
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_marginTop="5dp"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:text="start"
+                                android:textSize="10dp"
+                                android:padding="0dp"
+                                android:background="@drawable/roundbuttonbglogin"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:src="@drawable/frog"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="25dp"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#CEDDCA">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Marichi’s Pose"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:textSize="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="(Marichyasana)"
+                                android:textStyle="normal"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:textSize="15dp"
+                                android:maxLines="4"
+                                android:ellipsize="end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Stretches the shoulders, hamstring and abdominal muscles."
+                                android:textStyle="normal"
+                                android:layout_marginTop="5dp" />
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_marginTop="5dp"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:text="start"
+                                android:textSize="10dp"
+                                android:padding="0dp"
+                                android:background="@drawable/roundbuttonbglogin"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:src="@drawable/marichi"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="25dp"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#C4D0CE">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Warrior I Pose"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:textSize="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="(Virabhadarasana)"
+                                android:textStyle="normal"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:textSize="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="4"
+                                android:ellipsize="end"
+                                android:text="Strengthens the shoulders, arms and back muscles. Strengthens and stretches the thighs, calves and ankles."
+                                android:textStyle="normal"
+                                android:layout_marginTop="5dp" />
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_marginTop="5dp"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:text="start"
+                                android:textSize="10dp"
+                                android:padding="0dp"
+                                android:background="@drawable/roundbuttonbglogin"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:src="@drawable/warrior1"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="25dp"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#CEDDCA">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Monkey Pose"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:textSize="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="(Hanumanasana)"
+                                android:textStyle="normal"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:textSize="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="4"
+                                android:ellipsize="end"
+                                android:text="Stretches the thighs, hamstrings and groin."
+                                android:textStyle="normal"
+                                android:layout_marginTop="5dp" />
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_marginTop="5dp"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:text="start"
+                                android:textSize="10dp"
+                                android:padding="0dp"
+                                android:background="@drawable/roundbuttonbglogin"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:src="@drawable/monkey"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="25dp"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#C4D0CE">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:layout_height="wrap_content"
+                                android:text="Heron Pose"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:textSize="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="(Kraunchasana)"
+                                android:textStyle="normal"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:textSize="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="4"
+                                android:ellipsize="end"
+                                android:text="Stretches the thighs, knees, and ankles."
+                                android:textStyle="normal"
+                                android:layout_marginTop="5dp" />
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_marginTop="5dp"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:text="start"
+                                android:textSize="10dp"
+                                android:padding="0dp"
+                                android:background="@drawable/roundbuttonbglogin"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:src="@drawable/heron"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="25dp"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#CEDDCA">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lotus Pose"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:textSize="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="(Padmasana)"
+                                android:textStyle="normal"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:textSize="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="4"
+                                android:ellipsize="end"
+                                android:text="Opens the hips, groin and stretches the knees, ankles and thighs. Strengthens the back and calms the mind, reduces stress and anxiety."
+                                android:textStyle="normal"
+                                android:layout_marginTop="5dp"/>
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_marginTop="5dp"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:text="start"
+                                android:textSize="10dp"
+                                android:padding="0dp"
+                                android:background="@drawable/roundbuttonbglogin"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:src="@drawable/lotus"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+
+
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>

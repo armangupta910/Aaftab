@@ -7,10 +7,9 @@
     android:layout_marginStart="-20dp"
     android:layout_marginEnd="-20dp">
 
-    <View
+    <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:background="@color/color4" />
+        android:background="@color/white"
+        android:layout_height="match_parent"/>
 </FrameLayout>

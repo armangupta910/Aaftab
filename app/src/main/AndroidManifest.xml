@@ -23,6 +23,24 @@
         android:theme="@style/Theme.Moksha"
         tools:targetApi="31">
         <activity
+            android:name=".advanceTraining"
+            android:exported="false" />
+        <activity
+            android:name=".intermediateTraining"
+            android:exported="false" />
+        <activity
+            android:name=".begineerTraining"
+            android:exported="false" />
+        <activity
+            android:name=".tryingOut"
+            android:exported="false" />
+        <activity
+            android:name=".beginPage"
+            android:exported="false" />
+        <activity
+            android:name=".passwordresetemailsent"
+            android:exported="false" />
+        <activity
             android:name=".setNewPassword"
             android:exported="false" />
         <activity
@@ -38,10 +56,10 @@
             android:name=".loginSuccess"
             android:exported="false" />
         <activity
-            android:name=".demo"
+            android:name=".splashScreen"
             android:exported="false" />
         <activity
-            android:name=".yogaPoses"
+            android:name=".getStarted"
             android:exported="false" />
         <activity
             android:name=".signupPage"
@@ -53,7 +71,7 @@
             android:name=".beginOptionPage"
             android:exported="false" />
         <activity
-            android:name=".getStarted"
+            android:name=".demo"
             android:exported="false" />
         <activity
             android:name=".poseActivity"
@@ -61,7 +79,7 @@
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".beginPage"
+            android:name=".yogaPoses"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
