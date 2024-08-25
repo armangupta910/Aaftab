@@ -32,9 +32,6 @@
             android:name=".begineerTraining"
             android:exported="false" />
         <activity
-            android:name=".tryingOut"
-            android:exported="false" />
-        <activity
             android:name=".beginPage"
             android:exported="false" />
         <activity
