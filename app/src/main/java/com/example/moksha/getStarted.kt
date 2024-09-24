@@ -91,35 +91,6 @@ class getStarted : AppCompatActivity() {
             animateCardViewToVisible(findViewById(R.id.tab4card))
         }
 
-        viewPager = findViewById(R.id.viewPager)
-        dotIndicator = findViewById(R.id.dotsIndicator)
-
-        val carouselItems = listOf(
-            CarouselItem(R.drawable.walking, "Item 1"),
-            CarouselItem(R.drawable.meditation, "Item 2"),
-            CarouselItem(R.drawable.stretching, "Item 3")
-        )
-
-        val adapter = CarouselAdapter(carouselItems)
-        viewPager.adapter = adapter
-
-        // Set up dot indicator
-        dotIndicatorAdapter = DotIndicatorAdapter(carouselItems.size)
-        dotIndicator.adapter = dotIndicatorAdapter
-        dotIndicator.layoutManager =
-            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-
-        // Attach Page Change Listener to ViewPager2
-        viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
-            override fun onPageSelected(position: Int) {
-                super.onPageSelected(position)
-                dotIndicatorAdapter.setSelectedIndex(position)
-            }
-        })
-
-        val space = 20 // Adjust this value to control the space between items
-        viewPager.addItemDecoration(CarouselItemDecoration(space))
-        viewPager.setPageTransformer(CarouselPageTransformer(1f))
     }
 
     private fun animateCardViewWidthToZero(cardView: CardView) {

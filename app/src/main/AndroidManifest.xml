@@ -56,7 +56,7 @@
             android:name=".splashScreen"
             android:exported="false" />
         <activity
-            android:name=".getStarted"
+            android:name=".yogaPoses"
             android:exported="false" />
         <activity
             android:name=".signupPage"
@@ -76,7 +76,7 @@
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".yogaPoses"
+            android:name=".getStarted"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
